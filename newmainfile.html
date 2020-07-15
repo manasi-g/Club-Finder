@@ -1,0 +1,498 @@
+<html>
+    <head>
+
+        <title>PICTClubFinder</title>
+        
+        <link rel="stylesheet" href="mainCSS.CSS">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="particle.css">
+
+    </head>
+    
+<body class="container ">
+    <canvas id="canvas1"></canvas>
+    <script src="script.js"></script>
+    <div class="background">
+        
+        <!--this is for background image, this tag will close at the end, sample css example
+        .background{
+            height:100%;
+            width:100%;
+        background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4),url(#url of image#))
+        background-position:center;
+        background-size:cover;
+        position:absolute;
+        }-->
+ 
+    <div style="padding-left: 500px; padding-top: 200px;">
+        
+        
+
+    
+    <form id="page0" class="page stack blankbox">
+        
+       <!--<label><span><h2>WELCOME</h2></span></label><br>
+        <label>chuttar and manasi sitting on  tree, k-i-s-s-i-n-g...............</label>
+        <div class="button-box" >
+            <div id="btn1" ></div>
+           
+            <button type="button" class ="toggle-btn" name="p2b2" value="Next" onclick="enter()">enter</button>
+            
+        </div>-->
+    </form>
+
+    
+    <form id="page1" class=" page stack " class="one"><!--this form will be sliding when the enter button is clicked,
+
+        </div>
+        <div class="overlap">-->
+    
+    <!--form id="page1" class="page stack"--><!--this form will be sliding when the enter button is clicked,
+    so overflow-command should be there,    Also, i've mentioned an example down which has been copied for the next 10 ques, so that you guys can just
+    type the ques and each ques has beeen provided 6 checkboxes, all the boxes follow a specific pattern of id
+    names , they are important as they will be used for increasing the pointers in javascript-->
+        <label><span><h2>What do you do watch on YouTube most often?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p1c1" name="Q1" onclick="V1()"> Ted Talks <br>
+        <input type="checkbox" class="checkbox" id="p1c2" name="Q1" onclick="V1()">Geopolitics and news <br>
+        <input type="checkbox" class="checkbox" id="p1c3" name="Q1" onclick="V1()">Tech reviews<br>
+        <input type="checkbox" class="checkbox" id="p1c4" name="Q1" onclick="V1()">Social issues/ nature related documentaries<br>
+        <input type="checkbox" class="checkbox" id="p1c6" name="Q1" onclick= "V1()">Music /Life Hack videos<br>
+        <div class="button-box"> <!--this has been provided above also, so if you write the code for class:
+        "button-box" once you don't need to repeat it-->
+            <div id="btn" ></div><!--you have already written the css of id="btn"-->
+            <button type="button" class="toggle-btn" name="p1b1" value="Previous">Previous</button>
+            <!--write a js code that will slide in the previous page-->
+            <button type="button" class="toggle-btn" name="p1b2" value="Next" onclick=" stats(); gotopage2();">Next</button>
+            <!--write a js code that will slide page 2 -->
+        </div>
+    </form>
+
+    <form id="page2" class="page stack">
+        <label><span><h2>What are you interested in after engineering?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p2c1" name="Q2" onclick="V2()">MBA<br>
+        <input type="checkbox" class="checkbox" id="p2c2" name="Q2"onclick="V2()" >MSc/ M tech<br>
+        <input type="checkbox" class="checkbox" id="p2c3" name="Q2" onclick="V2()">Civil Services<br>
+        <input type="checkbox" class="checkbox" id="p2c4" name="Q2" onclick="V2()">Media<br>
+        <input type="checkbox" class="checkbox" id="p2c6" name="Q2" onclick="V2()">Startup<br>
+        <br>
+        <div class="button-box" >
+            <div id="btn" ></div>
+            <button type="button" class ="B" name="p2b1" value="Previous" onclick="backtopage1() " >Previous</button>
+            <!--code for gotopage1()-->
+            <button type="button" class ="B" name="p2b2" value="Next" onclick="gotopage3()">Next</button>
+            <!--code for gotopage3()-->
+        </div>
+    </form>
+
+    <form id="page3" class="page stack">
+        <label><span><h2>      Do you prefer to work?      </h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p3c1" name="Q3"onclick="V3()" >in a very small close group<br>
+        <input type="checkbox" class="checkbox" id="p3c2" name="Q3" onclick="V3()" >in a small group<br>
+        <input type="checkbox" class="checkbox" id="p3c3" name="Q3" onclick="V3()" >in a medium sized group<br>
+        <input type="checkbox" class="checkbox" id="p3c4" name="Q3" onclick="V3()" >in a large group<br>
+        <br>
+        <br>
+        
+        <div class="button-box" >
+            <div id="btn" ></div>
+            <button type="button" class ="B1" name="p3b1" value="Previous" onclick="backtopage2()" >Previous</button>
+            <!--code for gotopage2()-->
+            <button type="button" class ="B2" name="p3b2" value="Next" onclick="gotopage4()" >Next</button>
+            <!--code for gotopage3()-->
+        </div>
+    </form>
+
+    <form id="page4" class="page stack">
+        <label><span><h2> What language are you most comfortable with? </h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p4c1" name="Q4" onclick="V4()" >Marathi<br>
+        <input type="checkbox" class="checkbox" id="p4c2" name="Q4" onclick="V4()" >Hindi<br>
+        <input type="checkbox" class="checkbox" id="p4c3" name="Q4" onclick="V4()" >English<br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="B1" name="p4b1" value="Previous" onclick="backtopage3() " >Previous</button>
+            <!--code for gotopage3()-->
+            <button type="button" class ="B2" name="p4b2" value="Next" onclick="gotopage5()">Next</button>
+            <!--code for gotopage5()-->
+        </div>
+    </form>
+
+    <form id="page5" class="page stack">
+        <label><span><h2>What defines you?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p5c1" name="Q5" onclick="V5()" >I am an extrovert<br>
+        <input type="checkbox" class="checkbox" id="p5c1" name="Q5" onclick="V5()" >I am an introvert<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="toggle-btn" name="p5b1" value="Previous" onclick="backtopage4()">Previous</button>
+            <button type="button" class ="toggle-btn" name="p5b2" value="Next" onclick="gotopage6() ">Next</button>
+        </div>
+    </form>
+
+    <form id="page6" class="page stack">
+        <label><span><h2>Do you follow cutting-edge technology?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p6c1" name="Q6" onclick="V6()" >Yes<br>
+        <input type="checkbox" class="checkbox" id="p6c2" name="Q6"onclick="V6()" >No<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="toggle-btn" name="p6b1" value="Previous" onclick="backtopage5()">Previous</button>
+            <button type="button" class ="toggle-btn" name="p6b2" value="Next" onclick="gotopage7()">Next</button>
+        </div>
+    </form>
+
+    <form id="page7" class="page stack">
+        <label><span><h2>What kind of books do you enjoy?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p7c1" name="Q7" onclick="V7()" >Sci- fi<br>
+        <input type="checkbox" class="checkbox" id="p7c2" name="Q7" onclick="V7()" >Self- Help<br>
+        <input type="checkbox" class="checkbox" id="p7c3" name="Q7" onclick="V7()" >Fantasy/ Fiction<br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="toggle-btn" name="p7b1" value="Previous" onclick="backtopage6()">Previous</button>
+            <button type="button" class ="toggle-btn" name="p7b2" value="Next" onclick="gotopage8()">Next</button>
+        </div>
+    </form>
+
+    <form id="page8" class="page stack">
+        <label><span><h2>If given an hour what would you watch ?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p8c1" name="Q8" onclick="V8()" >Sharktank<br>
+        <input type="checkbox" class="checkbox" id="p8c2" name="Q8" onclick="V8()" >Nature Documentaries<br>
+        <input type="checkbox" class="checkbox" id="p8c3" name="Q8" onclick="V8()" >The IT crowd<br>
+        <input type="checkbox" class="checkbox" id="p8c4" name="Q8" onclick="V8()" >Lord of the Rings<br>
+        <input type="checkbox" class="checkbox" id="p8c5" name="Q8" onclick="V8()" >Death Note<br>
+        <input type="checkbox" class="checkbox" id="p8c6" name="Q8" onclick="V8()" >I am F.R.I.E.N.D.S fangirl (sitcoms)<br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="toggle-btn" name="p8b1" value="Previous" onclick="backtopage7()">Previous</button>
+            <button type="button" class ="toggle-btn" name="p8b2" value="Next" onclick="gotopage9()">Next</button>
+        </div>
+    </form>
+
+    <form id="page9" class="page stack">
+        <label><span><h2> Your laptop screen goes blank (RAM error) what will you do? </h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p9c1" name="Q9" onclick="V9()" >I will open up my laptop and reinsert the RAM.<br>
+        <input type="checkbox" class="checkbox" id="p9c2" name="Q9"onclick="V9()" >Search online on how to fix the issue<br>
+        <input type="checkbox" class="checkbox" id="p9c3" name="Q9" onclick="V9()" >Ask someone to fix the issue/ Go to the store.<br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn" class="toggle-btn"></div>
+            <button type="button" class ="toggle-btn" name="p9b1" value="Previous" onclick="backtopage8()">Previous</button>
+            <button type="button" class ="toggle-btn" name="p9b2" value="Next" onclick="gotopage10()">Next</button>
+        </div>
+    </form>
+
+    <form id="page10" class="page stack">
+        <label><span><h2>You are interested in:</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p10c1"name="Q10" onclick="V10()" >Competeing<br>
+        <input type="checkbox" class="checkbox" id="p10c2" name="Q10" onclick="V10()" >Collaborating<br>
+        <input type="checkbox" class="checkbox" id="p10c2" name="Q10" onclick="V10()" >Comfortable with both<br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn" class="toggle-btn"></div>
+            <button type="button" class ="toggle-btn" name="p10b1" value="Previous" onclick="backtopage9()">Previous</button>
+            <a href="index.html"><button type= "button" button id= "start" class ="toggle-btn" name="p10b2" onclick="stats();">Submit </button></a>
+        </div>
+    </form>
+</div>
+<!-- <div>
+    <p>Communication skills</p>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100"></div>
+    </div> -->
+</div>
+</div>
+    </div>
+    <script>
+        var MUNCounter = 0;
+        var TedXcounter = 0;
+        var DebSoccounter = 0;
+        var IEEEcounter = 0;
+        var ACMcounter = 0;
+        var Pictorealcounter = 0;
+        var Roboticscounter = 0;
+        var ArtCircle = 0;
+        var NSSCounter = 0;
+        var Ecell = 0;
+                
+                function V1()  
+        {  
+            var checkboxes = document.getElementsByName("Q1");  
+            //for(var i = 0; i <1; i++) 
+            for(var i = 0; i < checkboxes.length; i++)  
+            {  
+                   if(checkboxes[0].checked) 
+                      { 
+                        TED(); 
+                        
+                      }
+                   if(checkboxes[1].checked)  
+                      {
+                        MUN(); Debsoc();
+                        
+                      }
+                   if(checkboxes[2].checked)  
+                      {
+                        ACM(); PISB(); Robotics(); E();
+                        
+                      }
+                   if(checkboxes[3].checked)  
+                      {
+                        NSS(); Picto();
+                       
+                      }
+                   if(checkboxes[4].checked)  
+                      {
+                        Art(); 
+                      
+                      }
+            }  
+        } 
+
+
+        function Art(){
+           ArtCircle =  ArtCircle + 1;
+        }
+
+        function Picto(){
+            Pictorealcounter = Pictorealcounter + 1;
+        }
+        function Debsoc(){
+            DebSoccounter = DebSoccounter + 1;
+        }
+        function NSS(){
+            NSSCounter = NSSCounter + 1;
+        }
+        function Robotics(){
+            Roboticscounter = Roboticscounter +1;
+        }
+        function PISB(){
+            IEEEcounter = IEEEcounter + 1;
+        }
+        function ACM(){
+            ACMcounter = ACMcounter +1;
+        }
+        function MUN(){
+            MUNCounter = MUNCounter +1;
+        }
+        function TED(){
+            TedXcounter =TedXcounter +1;
+        }
+        function E(){
+            Ecell = Ecell + 1;
+        }
+         
+
+       // var t = document.getElementById("page1");
+       // t.style.display ="none";
+        var a = document.getElementById("page2");
+        a.style.display = "none";
+        var b = document.getElementById("page3");
+        b.style.display = "none";
+        var c = document.getElementById("page4");
+        c.style.display = "none";
+        var d = document.getElementById("page5")
+        d.style.display = "none";
+        var e = document.getElementById("page6");
+        e.style.display = "none";
+        var f = document.getElementById("page7");
+        f.style.display = "none";
+        var g = document.getElementById("page8");
+        g.style.display = "none";
+        var g = document.getElementById("page9");
+        g.style.display = "none";
+        var h = document.getElementById("page10");
+        h.style.display = "none";
+
+
+        function enter(){
+            t.style.display="block";
+            var g = document.getElementById("page0");
+            g.style.display = "none";
+            refresh();
+        }
+        
+
+
+        function backtopage1(){
+            var x = document.getElementById("page2");
+            x.style.display = "none";
+            var y = document.getElementById("page1");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage2(){
+            var x = document.getElementById("page3");
+            x.style.display = "none";
+            var y = document.getElementById("page2");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage3(){
+            var x = document.getElementById("page4");
+            x.style.display = "none";
+            var y = document.getElementById("page3");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage4(){
+            var x = document.getElementById("page5");
+            x.style.display = "none";
+            var y = document.getElementById("page4");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage5(){
+            var x = document.getElementById("page6");
+            x.style.display = "none";
+            var y = document.getElementById("page5");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage6(){
+            var x = document.getElementById("page7");
+            x.style.display = "none";
+            var y = document.getElementById("page6");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage7(){
+            var x = document.getElementById("page8");
+            x.style.display = "none";
+            var y = document.getElementById("page7");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage8(){
+            var x = document.getElementById("page9");
+            x.style.display = "none";
+            var y = document.getElementById("page8");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage9(){
+            var x = document.getElementById("page10");
+            x.style.display = "none";
+            var y = document.getElementById("page9");
+            y.style.display= "block";
+            refresh();
+
+        }
+        
+        function gotopage2() 
+        {
+            var x = document.getElementById("page1");
+            x.style.display = "none";
+            var y = document.getElementById( "page2");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage3() 
+        {
+            var x = document.getElementById("page2");
+            x.style.display = "none";
+            var y = document.getElementById( "page3");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage4() 
+        {
+            var x = document.getElementById("page3");
+            x.style.display = "none";
+            var y = document.getElementById( "page4");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage5() 
+        {
+            var x = document.getElementById("page4");
+            x.style.display = "none";
+            var y = document.getElementById( "page5");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage6() 
+        {
+            var x = document.getElementById("page5");
+            x.style.display = "none";
+            var y = document.getElementById( "page6");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage7() 
+        {
+            var x = document.getElementById("page6");
+            x.style.display = "none";
+            var y = document.getElementById( "page7");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage8() 
+        {
+            var x = document.getElementById("page7");
+            x.style.display = "none";
+            var y = document.getElementById( "page8");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage9() 
+        {
+            var x = document.getElementById("page8");
+            x.style.display = "none";
+            var y = document.getElementById( "page9");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage10() 
+        {
+            var x = document.getElementById("page9");
+            x.style.display = "none";
+            var y = document.getElementById( "page10");
+            y.style.display = "block";
+            refresh();
+
+        }
+
+        
+        
+        function stats()
+        {
+            alert(MUNCounter + "," + IEEEcounter+","+ ACMcounter+","+ Ecell+ ","+ NSSCounter+","+TedXcounter + ","+ ArtCircle + "," +Pictorealcounter + ","+ Roboticscounter+ "," +DebSoccounter);
+        }
+    </script>
+
+</body>
+</html>

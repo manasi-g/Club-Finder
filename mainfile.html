@@ -1,0 +1,663 @@
+<html>
+    <head>
+
+        <title>PICTClubFinder</title>
+        
+        <link rel="stylesheet" href="mainCSS.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="particle.css">
+    </head>
+    
+<body class="container">
+    <canvas id="canvas1"></canvas>
+    <script src="script.js"></script>
+    <div class="background">
+        
+        <!--this is for background image, this tag will close at the end, sample css example
+        .background{
+            height:100%;
+            width:100%;
+        background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4),url(#url of image#))
+        background-position:center;
+        background-size:cover;
+        position:absolute;
+        }-->
+ 
+    <div style="padding-left: 500px; padding-top: 200px;">
+        
+        
+
+    
+    <form id="page0" class="page stack">
+        <!--<br><br><br><br><br>
+        <label><span><h2>WELCOME</h2></span></label><br>
+        <label>chuttar and manasi sitting on  tree, k-i-s-s-i-n-g...............</label>
+        <div class="button-box" >
+            <div id="btn1" ></div>
+           
+            <button type="button" class ="toggle-btn" name="p2b2" value="Next" onclick="enter()">enter</button>
+        </div>-->
+    </form>
+
+    
+    <form id="page1" class=" page stack " class="one">
+        
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+    
+        <div id="pad">
+    <div class="progress-bar" style="--width: 10" ></div>
+        </div>
+        
+
+        <label><span><h2>What do you do watch on YouTube most often?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p1c1" onclick="TED();TButton();"> Motivational videos/ Ted Talks <br>
+        <input type="checkbox" class="checkbox" id="p1c2" onclick="MUN();MButton();">Geopolitics and news <br>
+        <input type="checkbox" class="checkbox" id="p1c3" onclick="ACM();PISB();Robotics(); E(); P1Button();P2Button(); P3Button(); EButton();">Tech reviews<br>
+        <input type="checkbox" class="checkbox" id="p1c4" onclick="NSS();Debsoc();Picto(); NButton(); DButton(); PButton();">Social issues/ nature related documentaries<br>
+        <!--<input type="checkbox" id="p1c5" onclick="Art();AButton();" >Fashion YouTubers<br>-->
+        <input type="checkbox" class="checkbox" id="p1c6" onclick="Art();AButton();">Music/ Daily Vlogs<br>
+        <div class="button-box"> 
+            <div id="btn" ></div>
+          <a href= "canvas1.html" ><button type="button" class="B1" name="p1b1" value="Previous" onclick=" refresh();">Previous</button></a>
+            
+            <button type="button" class="B2" name="p1b2" value="Next" onclick="  gotopage2();refresh();">Next</button>
+            
+        </div>
+    </form>
+
+    <form id="page2" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+        </div>
+           
+                                    
+            <div id="pad">
+                <div class="progress-bar" style="--width: 20" ></div>
+                    </div>
+        <label><span><h2>What are you interested in after engineering?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p2c1" onclick=" MUN(); MButton();">MBA<br>
+        <input type="checkbox" class="checkbox" id="p2c2"onclick = "ACM();P1Button(); PISB();  P2Button(); Robotics(); P3Button();">MSc/ M tech<br>
+        <input type="checkbox" class="checkbox" id="p2c3" onclick="NSS();NButton(); Picto(); PButton();">Civil Services<br>
+        <input type="checkbox" class="checkbox" id="p2c4" onclick="TED(); TButton(); Art(); AButton(); Debsoc(); DButton();">Media/ Entertainment Industry<br>
+        <input type="checkbox" class="checkbox" id="p2c6" onclick="E(); EButton();">Startup<br>
+        <br>
+        <div class="button-box" >
+            <div id="btn" ></div>
+            <button type="button" class ="B1" name="p2b1" value="Previous" onclick="backtopage1(); refresh();">Previous</button>
+            <!--code for gotopage1()-->
+            <button type="button" class ="B2" name="p2b2" value="Next" onclick="gotopage3();refresh();">Next</button>
+            <!--code for gotopage3()-->
+        </div>
+    </form>
+
+    <form id="page3" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 30" ></div>
+                </div>
+        <label><span><h2>      Do you prefer to work?      </h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p3c1" onclick="TED(); TButton(); MUN(); MButton(); Debsoc(); DButton();">in a very small close group<br>
+        <input type="checkbox" class="checkbox" id="p3c2" onclick="Robotics(); P3Button();E(); EButton();">in a small group<br>
+        <input type="checkbox" class="checkbox" id="p3c3" onclick="ACM(); P1Button(); NSS(); NButton();Picto(); PButton(); ">in a medium sized group<br>
+        <input type="checkbox" class="checkbox" id="p3c4" onclick= "Art(); AButton(); PISB();P2Button();">in a large group<br>
+        <br>
+        <br>
+        
+        <div class="button-box" >
+            <div id="btn" ></div>
+            <button type="button" class ="B1" name="p3b1" value="Previous" onclick="backtopage2(); refresh();">Previous</button>
+            <!--code for gotopage2()-->
+            <button type="button" class ="B2" name="p3b2" value="Next" onclick="gotopage4();refresh();">Next</button>
+            <!--code for gotopage3()-->
+        </div>
+    </form>
+
+    <form id="page4" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 40" ></div>
+                </div>
+
+        <label><span><h2> What languages are you most comfortable with? </h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p4c1" onclick="NSS(); NButton();Art(); AButton();">Marathi<br>
+        <input type="checkbox" class="checkbox" id="p4c2" onclick="PISB();ACM(); Robotics();P1Button();  P2Button(); P3Button(); Picto();PButton();">Hindi<br>
+        <input type="checkbox" class="checkbox" id="p4c3" onclick="MUN(); MButton(); E(); EButton();TED(); TButton();Debsoc(); DButton();stats();">English<br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="B1" name="p4b1" value="Previous" onclick="backtopage3(); refresh();">Previous</button>
+            <!--code for gotopage3()-->
+            <button type="button" class ="B2" name="p4b2" value="Next" onclick="gotopage5();refresh();">Next</button>
+            <!--code for gotopage5()-->
+        </div>
+    </form>
+
+    <form id="page5" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 50" ></div>
+                </div>
+        <label><span><h2>Which of these options describes you the best?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p5c1" onclick=" Art();NSS();E();Picto();TED(); TButton();MUN(); MButton();Debsoc(); DButton(); AButton();  NButton(); PButton(); EButton()">I am an extrovert<br>
+        <input type="checkbox" class="checkbox" id="p5c1" onclick="PISB();ACM();Robotics(); P1Button();  P2Button(); P3Button();">I am an introvert<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="B1" name="p5b1" value="Previous" onclick="backtopage4(); refresh();">Previous</button>
+            <button type="button" class ="B2" name="p5b2" value="Next" onclick="gotopage6();refresh();">Next</button>
+        </div>
+    </form>
+
+    <form id="page6" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 60" ></div>
+                </div>
+        <label><span><h2>Do you follow cutting-edge technology?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p6c1" onclick="PISB(); P2Button(); ACM(); P1Button(); Robotics();P3Button();E(); EButton();">Yes<br>
+        <input type="checkbox" class="checkbox" id="p6c2" onclick="Art(); Picto();TED(); TButton();MUN();NSS();Debsoc();  MButton(); DButton(); NButton(); AButton(); PButton();">No<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="B1" name="p6b1" value="Previous" onclick="backtopage5(); refresh();">Previous</button>
+            <button type="button" class ="B2" name="p6b2" value="Next" onclick="gotopage7(); refresh();">Next</button>
+        </div>
+    </form>
+
+    <form id="page7" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 70" ></div>
+                </div>
+        <label><span><h2>What kind of books do you enjoy?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p7c1" onclick="PISB(); P2Button(); ACM(); P1Button(); Robotics();P3Button();">Sci- fi<br>
+        <input type="checkbox" class="checkbox" id="p7c2" onclick="MUN(); MButton();Picto(); E(); Debsoc();NSS(); NButton();DButton(); NSS(); NButton(); EButton();PButton();">Self- Help<br>
+        <input type="checkbox" class="checkbox" id="p7c3" onclick="TED(); TButton(); AButton(); Art();">Fantasy/ Fiction<br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="B1" name="p7b1" value="Previous" onclick="backtopage6(); refresh();">Previous</button>
+            <button type="button" class ="B2" name="p7b2" value="Next" onclick="gotopage8();refresh();">Next</button>
+        </div>
+    </form>
+
+    <form id="page8" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 80" ></div>
+                </div>
+        <label><span><h2>If given an hour what would you watch ?</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p8c1" onclick="E(); Ebutton();">Sharktank<br>
+        <input type="checkbox" class="checkbox" id="p8c2" onclick="NSS(); NButton();">Nature Documentaries<br>
+        <input type="checkbox" class="checkbox" id="p8c3" onclick="PISB(); P2Button(); ACM(); P1Button(); Robotics();P3Button();">The IT crowd<br>
+        <input type="checkbox" class="checkbox" id="p8c4" onclick ="Art(); AButton(); MUN(); MButton(); Debsoc(); DButton();">Lord of the Rings<br>
+        <input type="checkbox" class="checkbox" id="p8c5" onclick = "Picto(); PButton(); TED(); TButton();">Death Note<br>
+        <input type="checkbox" class="checkbox" id="p8c6">Stick to my og sit-coms<br>
+        <div class="button-box" >
+            <div id="btn"></div>
+            <button type="button" class ="B1" name="p8b1" value="Previous" onclick="backtopage7() ;refresh();">Previous</button>
+            <button type="button" class ="B2" name="p8b2" value="Next" onclick="gotopage9(); refresh();">Next</button>
+        </div>
+    </form>
+
+    <form id="page9" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+           
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 90" ></div>
+                </div>
+        <label><span><h2> Your laptop screen goes blank (RAM error) what will you do? </h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p9c1" onclick= "Robotics(); P3Button();">I will open up my laptop and reinsert the RAM.<br>
+        <input type="checkbox" class="checkbox" id="p9c2" onclick="PISB(); P1Button(); ACM(); P2Button();">Search online on how to fix the issue<br>
+        <input type="checkbox" class="checkbox" id="p9c3"  onclick="TED();E();NSS(); Debsoc(); TButton();MUN(); Art(); MButton();Picto(); DButton();  NButton(); AButton();PButton(); EButton();">Ask someone to fix the issue/ Go to the store.<br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn" ></div>
+            <button type="button" class ="B1" name="p9b1" value="Previous" onclick="backtopage8(); refresh();">Previous</button>
+            <button type="button" class ="B2" name="p9b2" value="Next" onclick="gotopage10(); refresh();">Next</button>
+        </div>
+    </form>
+
+    <form id="page10" class="page stack">
+        <div class="button-box1"> 
+            <div id="btn3" ></div>
+            
+                                    
+        </div>
+        <div id="pad">
+            <div class="progress-bar" style="--width: 100" ></div>
+                </div>
+        <label><span><h2>You are what kind of a person by nature</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p10c1" onclick= "MUN(); E(); Art(); AButton(); EButton(); MButton(); Debsoc(); DButton()">Competitive<br>
+        <input type="checkbox" class="checkbox" id="p10c2" onclick="PButton(); Picto(); NSS(); NButton(); TED(); TButton();">believe in collaborating<br>
+        <input type="checkbox" class="checkbox" id="p10c2" onclick="PISB(); P2Button(); ACM(); P1Button(); Robotics();P3Button();">Comfortable with both<br>
+        <br>
+        <br>
+        <br>
+        <div class="button-box" >
+            <div id="btn" ></div>
+            <button type="button" class ="B1" name="p10b1" value="Previous" onclick="backtopage9(); refresh();">Previous</button>
+            <a href="lastpagelayout.htm"><button type= "button" button id= "start" class ="B2" name="p10b2" onclick="stats(); refresh();">Submit </button></a>
+        </div>
+    </form>
+</div>
+<!-- <div>
+    <p>Communication skills</p>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100"></div>
+    </div> -->
+</div>
+</div>
+    </div>
+    <script>
+        var MUNcounter = 0;
+        var TedXcounter = 0;
+        var DebSoccounter = 0;
+        var IEEEcounter = 0;
+        var ACMcounter = 0;
+        var Pictorealcounter = 0;
+        var Roboticscounter = 0;
+        var ArtCircle = 0;
+        var NSSCounter = 0;
+        var Ecell = 0;
+        
+        var AB = 0;
+        var TB = 0;
+        var MB = 0;
+        var P1B = 0;
+        var P2B = 0;
+        var P3B = 0;
+        var PB = 0;
+        var NB = 0;
+        var DB = 0;
+        var EB = 0;
+
+
+        function AButton()
+        {
+            AB = AB + 1;  
+            if (AB%2 == 0)
+            {
+                ArtCircle = ArtCircle -2 ;
+            }
+        }
+
+        function TButton()
+        {
+            TB = TB + 1;  
+            if (TB%2 == 0)
+            {
+                TedXcounter = TedXcounter -2 ;
+            }
+        }
+
+        function MButton()
+        {
+            MB = MB + 1;  
+            if (MB%2 == 0)
+            {
+                MUNcounter = MUNcounter -2 ;
+            }
+        }
+
+        function P1Button()
+        {
+            P1B = P1B + 1;  
+            if (P1B%2 == 0)
+            {
+                ACMcounter = ACMcounter -2 ;
+            }
+        }
+
+        function P2Button()
+        {
+            P2B = P2B + 1;  
+            if (P2B%2 == 0)
+            {
+                IEEEcounter = IEEEcounter -2 ;
+            }
+        }
+
+        function P3Button()
+        {
+            P3B = P3B + 1;  
+            if (P3B%2 == 0)
+            {
+                Roboticscounter = Roboticscounter -2 ;
+            }
+        }
+
+        function PButton()
+        {
+            PB = PB + 1;  
+            if (PB%2 == 0 )
+            {
+                Pictorealcounter = Pictorealcounter -2 ;
+            }
+        }
+
+        function EButton()
+        {
+        EB = EB + 1;  
+            if (EB%2 == 0 )
+            {
+                Ecell = Ecell -2 ;
+            }
+        }
+
+        function  NButton()
+        {
+            NB = NB + 1;
+            if (NB%2 == 0)
+            {
+                NSSCounter = NSSCounter - 2;
+            }
+        }
+
+        function refresh()
+        {
+            AB = 0;
+            TB = 0;
+            MB = 0;
+            P1B = 0;
+            P2B = 0;
+            P3B = 0;
+            PB = 0;
+            NB = 0;
+            DB = 0;
+            EB = 0;
+
+        }
+        
+
+        function Art(){
+           ArtCircle =  ArtCircle + 1;
+        }
+
+        function Picto(){
+            Pictorealcounter = Pictorealcounter + 1;
+        }
+        function Debsoc(){
+            DebSoccounter = DebSoccounter + 1;
+        }
+        function NSS(){
+            NSSCounter = NSSCounter + 1;
+        }
+        function Robotics(){
+            Roboticscounter = Roboticscounter +1;
+        }
+        function PISB(){
+            IEEEcounter = IEEEcounter + 1;
+        }
+        function ACM(){
+            ACMcounter = ACMcounter +1;
+        }
+        function MUN(){
+            MUNcounter = MUNcounter +1;
+        }
+        function TED(){
+            TedXcounter =TedXcounter +1;
+        }
+        function E(){
+            Ecell = Ecell + 1;
+        }
+         
+
+        //var t = document.getElementById("page1");
+        //t.style.display ="none";
+        var a = document.getElementById("page2");
+        a.style.display = "none";
+        var b = document.getElementById("page3");
+        b.style.display = "none";
+        var c = document.getElementById("page4");
+        c.style.display = "none";
+        var d = document.getElementById("page5")
+        d.style.display = "none";
+        var e = document.getElementById("page6");
+        e.style.display = "none";
+        var f = document.getElementById("page7");
+        f.style.display = "none";
+        var g = document.getElementById("page8");
+        g.style.display = "none";
+        var g = document.getElementById("page9");
+        g.style.display = "none";
+        var h = document.getElementById("page10");
+        h.style.display = "none";
+
+
+        function enter(){
+            t.style.display="block";
+            var g = document.getElementById("page0");
+            g.style.display = "none";
+            refresh();
+        }
+        
+
+
+        function backtopage1(){
+            var x = document.getElementById("page2");
+            x.style.display = "none";
+            var y = document.getElementById("page1");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage2(){
+            var x = document.getElementById("page3");
+            x.style.display = "none";
+            var y = document.getElementById("page2");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage3(){
+            var x = document.getElementById("page4");
+            x.style.display = "none";
+            var y = document.getElementById("page3");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage4(){
+            var x = document.getElementById("page5");
+            x.style.display = "none";
+            var y = document.getElementById("page4");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage5(){
+            var x = document.getElementById("page6");
+            x.style.display = "none";
+            var y = document.getElementById("page5");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage6(){
+            var x = document.getElementById("page7");
+            x.style.display = "none";
+            var y = document.getElementById("page6");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage7(){
+            var x = document.getElementById("page8");
+            x.style.display = "none";
+            var y = document.getElementById("page7");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage8(){
+            var x = document.getElementById("page9");
+            x.style.display = "none";
+            var y = document.getElementById("page8");
+            y.style.display= "block";
+            refresh();
+
+        }
+        function backtopage9(){
+            var x = document.getElementById("page10");
+            x.style.display = "none";
+            var y = document.getElementById("page9");
+            y.style.display= "block";
+            refresh();
+
+        }
+        
+        function gotopage2() 
+        {
+            var x = document.getElementById("page1");
+            x.style.display = "none";
+            var y = document.getElementById( "page2");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage3() 
+        {
+            var x = document.getElementById("page2");
+            x.style.display = "none";
+            var y = document.getElementById( "page3");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage4() 
+        {
+            var x = document.getElementById("page3");
+            x.style.display = "none";
+            var y = document.getElementById( "page4");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage5() 
+        {
+            var x = document.getElementById("page4");
+            x.style.display = "none";
+            var y = document.getElementById( "page5");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage6() 
+        {
+            var x = document.getElementById("page5");
+            x.style.display = "none";
+            var y = document.getElementById( "page6");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage7() 
+        {
+            var x = document.getElementById("page6");
+            x.style.display = "none";
+            var y = document.getElementById( "page7");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage8() 
+        {
+            var x = document.getElementById("page7");
+            x.style.display = "none";
+            var y = document.getElementById( "page8");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage9() 
+        {
+            var x = document.getElementById("page8");
+            x.style.display = "none";
+            var y = document.getElementById( "page9");
+            y.style.display = "block";
+            refresh();
+
+        }
+        function gotopage10() 
+        {
+            var x = document.getElementById("page9");
+            x.style.display = "none";
+            var y = document.getElementById( "page10");
+            y.style.display = "block";
+            refresh();
+
+        }
+
+            function stats()
+        {
+            
+        
+            localStorage.setItem("MUN", MUNcounter);
+            localStorage.setItem("PISB", IEEEcounter);
+            localStorage.setItem("E", Ecell);
+            localStorage.setItem("ACM", ACMcounter);
+            localStorage.setItem("NSS", NSSCounter);
+            localStorage.setItem("TED", TedXcounter);
+            localStorage.setItem("Art", ArtCircle);
+            localStorage.setItem("Picto", Pictorealcounter);
+            localStorage.setItem("Debsoc", DebSoccounter);
+            localStorage.setItem("Robo", Roboticscounter);
+        }
+
+
+
+    </script>
+        <!--<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+</body>
+</html>

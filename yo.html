@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTS</title>
+</head>
+<body>
+    <div>
+        <p>Communication skills</p>
+        
+        <div class="progress">
+            <div id="progressbar" role="progressbar"  aria-valuenow= "25"
+                aria-valuemin="0" aria-valuemax="80"></div>
+        </div>
+    </div>
+    <script>
+      /* var hash = {mun: 10, tedx: 40};
+/* hash['bob'] = 123;
+hash['joe'] = 456; */
+
+/*var sum = 0;
+for (var name in hash) {
+    s
+}
+alert(sum);
+        Array.prototype.myForEach = function(element) {
+  for (var i = 0; i < this.length; i++) {
+    element(this[i], i, this);
+  }
+};
+
+var forArr = ['8', '17', '25', '42','67'];
+forArr.myForEach(function(exm){
+  return exm;
+}); */
+var obj = {
+        "1": "10",
+        "2": "20",
+        "3": "30",
+        "4": "40",
+        "5": "50",
+        "6": "60",
+        "7": "70",
+        "8": "80"
+    };
+
+    var arr = [];
+
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            arr.push(obj[key]);
+        }
+    }
+    
+     arr=arr.sort();
+    alert(arr[0])
+    var a= arr[0]
+    var b= a +"%"
+   $('#progressbar').css('width',a +"%");
+
+
+    
+        //ManC you have to use these variable names. The contain the data from prev page. 
+        var PICTMUN = localStorage.getItem("MUN");
+        var PISB = localStorage.getItem("PISB");
+        var PASC = localStorage.getItem("ACM");
+        var BnECell= localStorage.getItem("E");
+        var PICTRobototics = localStorage.getItem("Robo");
+        var Pictoreal = localStorage.getItem("Picto");
+        var ArtCircle = localStorage.getItem("Art");
+        var NSS = localStorage.getItem("NSS");
+        var TedXPICT = localStorage.getItem("TED");
+        var DebSoc = localStorage.getItem("Debsoc");
+
+        //This alert line is for error chceking
+        alert(PICTMUN + ","+ PISB+ ","+ PASC+","+ BnECell+","+NSS+","+ TedXPICT+","+ArtCircle+","+Pictoreal+","+ PICTRobototics+","+DebSoc);
+    </script>
+</body>
+</html>
